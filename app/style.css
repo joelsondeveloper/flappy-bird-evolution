@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+h1 {
+  color: rgb(206, 10, 10);
+}
+
+button {
+  padding: 0.3rem 1rem;
+  background-color: rgb(206, 10, 10);
+  border: none;
+  color: #ddd;
+  cursor: pointer;
+  transition: scale 0.3s;
+}
+
+button:hover {
+  scale: 1.03;
+}
+
+.controls {
+  width: 100%;
+  background-color: rgb(31, 127, 211);
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.controls label {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.canvas-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  height: 400px;
+  background-color: rgb(31, 127, 211);
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.options {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 .5rem;
+}
+
+.brush-mode,
+.output-qtd-birds {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.output-qtd-birds span {
+  background-color: #fff;
+  text-align: center;
+}
+
+#brush-size {
+  -webkit-appearance: none;
+  height: 6px;
+  background: #ddd; /* cor da barra */
+  border-radius: 5px;
+  /* outline: none; */
+}
+
+/* barra no Chrome, Edge, Safari */
+#brush-size::-webkit-slider-runnable-track {
+  height: 6px;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+#brush-size::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: rgb(206, 10, 10);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+/* barra no Firefox */
+#brush-size::-moz-range-track {
+  height: 6px;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+/* bolinha no Firefox */
+#brush-size::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background-color: rgb(206, 10, 10);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#flappy {
+  background-color: rgb(104, 197, 197);
+}

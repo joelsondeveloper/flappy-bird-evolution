@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flappy Evolution</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h1>Flappy Evolution</h1>
+
+    <div class="controls">
+      <label>
+        <span>quantidade de passaros:</span>
+        <input type="number" value="2" id="qtdBirds">
+      </label>
+      <button id="play">play</button>
+    </div>
+
+    <div class="canvas-container">
+      <div class="options">
+        <!-- <label class="brush-size">
+          <span>Tamanho do pincel:</span>
+          <input
+            type="range"
+            min="10"
+            max="40"
+            value="10"
+            step="5"
+            id="brush-size"
+          />
+        </label> -->
+        <div class="brush-mode">
+          <span>desenhar/apagar:</span>
+          <div class="radios">
+            <label>
+              <input type="radio" name="mode" value="pencil" id="pencil" checked/>
+              <i class="fa-solid fa-pencil"></i>
+            </label>
+            <label>
+              <input type="radio" name="mode" value="eraser" id="eraser" />
+              <i class="fa-solid fa-eraser"></i>
+            </label>
+          </div>
+        </div>
+        <div class="output-qtd-birds">
+          <p>qtd passaros vivos:</p>
+          <span id="outputQtdBirds">0</span>
+        </div>
+      </div>
+
+      <canvas id="flappy" width="600" height="400"> </canvas>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
